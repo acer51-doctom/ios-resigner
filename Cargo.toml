@@ -1,6 +1,23 @@
 [package]
 name = "ios-resigner"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
+# UI Frameworks
+eframe = "0.27.0"
+egui = "0.27.0"
+ratatui = "0.26.0"
+crossterm = "0.27.0"
+
+# CLI & Async
+clap = { version = "4.5", features = ["derive"] }
+tokio = { version = "1.36", features = ["full"] }
+anyhow = "1.0"
+
+
+isideload = { git = "https://github.com/nab138/isideload" }
+idevice = "0.1.0"
+
+isideload-apple-codesign = "=0.29.4"
+isideload-x509-certificate = "=0.25.0"
